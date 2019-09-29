@@ -55,6 +55,7 @@ class HomeWindow {
             y: 0, //Y位置
             center: true, //居中
             useContentSize: true, //除去边框
+            transparent: false,
             width: 1500,
             minWidth: 1200,
             maxWidth: 1920,
@@ -67,7 +68,7 @@ class HomeWindow {
             minimizable: true, //可最小化
             maximizable: true, //可最大化
             closable: true, //可关闭
-            focusable: false, //可聚焦
+            focusable: true, //可聚焦
             alwaysOnTop: false, //窗口置顶
             fullscreen: false, //全屏
             fullscreenable: true, //可全屏
