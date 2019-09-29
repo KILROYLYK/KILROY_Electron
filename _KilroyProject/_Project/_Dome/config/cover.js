@@ -1,5 +1,3 @@
-/*global process module*/
-
 /**
  * Cover_Config
  */
@@ -80,14 +78,11 @@ class CoverWindow {
         });
         
         _this.window.webContents.openDevTools();
-        
         // _this.window.loadURL('');
         _this.window.loadFile('_KilroyProject/_Project/_Dome/view/cover.html');
-        
         _this.window.once('ready-to-show', () => {
             _this.window.show();
         });
-        
         _this.window.on('closed', () => {
             //清除浏览器对象
             _this.window = null;

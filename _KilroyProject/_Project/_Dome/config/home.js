@@ -1,5 +1,3 @@
-/*global process module*/
-
 /**
  * Home_Config
  */
@@ -47,11 +45,8 @@ class HomeWindow {
             width: 1200,
             height: 800
         });
-        
         _this.window.loadFile('_KilroyProject/_Project/_Dome/view/home.html');
-        
         _this.window.webContents.openDevTools();
-        
         _this.window.on('closed', () => {
             //清除浏览器对象
             _this.window = null;

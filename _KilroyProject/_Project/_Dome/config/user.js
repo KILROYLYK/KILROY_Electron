@@ -1,5 +1,3 @@
-/*global process*/
-
 /**
  * User_Config
  */
@@ -47,11 +45,8 @@ class UserWindow {
             width: 500,
             height: 800
         });
-        
         _this.window.loadFile('_KilroyProject/_Project/_Dome/view/cover.html');
-        
         _this.window.webContents.openDevTools();
-        
         _this.window.on('closed', () => {
             //清除浏览器对象
             _this.window = null;

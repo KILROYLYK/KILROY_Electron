@@ -1,5 +1,3 @@
-/*global process module*/
-
 /**
  * Home_Config
  */
@@ -13,7 +11,7 @@ class HomeWindow {
     constructor(electron) {
         const _this = this;
         
-        _this.name = '超首';
+        _this.name = 'DAU计算工具';
         _this.electron = electron;
         _this.window = null;
     }
@@ -80,16 +78,12 @@ class HomeWindow {
         });
         
         // _this.window.webContents.openDevTools();
-        
         // _this.window.loadURL('');
         _this.window.loadFile('_KilroyProject/_Project/_KILROY/DAU/view/home.html');
-        
         _this.window.once('ready-to-show', () => {
             _this.window.show();
         });
-        
         _this.window.on('closed', () => {
-            //清除浏览器对象
             _this.window = null;
         });
     }
