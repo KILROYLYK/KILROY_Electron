@@ -1,9 +1,9 @@
-/*global process*/
+/*global process module*/
 
 /**
- * User_Config
+ * Home_Config
  */
-class UserWindow {
+class HomeWindow {
     
     /**
      * CoverWindow原型对象
@@ -13,7 +13,7 @@ class UserWindow {
     constructor(electron) {
         const _this = this;
         
-        _this.name = '用户管理';
+        _this.name = '首页';
         _this.electron = electron;
         _this.window = null;
     }
@@ -44,11 +44,11 @@ class UserWindow {
         const _this = this;
         
         _this.window = new _this.electron.BrowserWindow({
-            width: 500,
+            width: 1200,
             height: 800
         });
         
-        _this.window.loadFile('_KilroyProject/_Dome/src/views/cover.html');
+        _this.window.loadFile('_KilroyProject/_Project/_Dome/src/views/home.html');
         
         _this.window.webContents.openDevTools();
         
@@ -77,4 +77,4 @@ class UserWindow {
     }
 }
 
-module.exports = UserWindow;
+module.exports = HomeWindow;

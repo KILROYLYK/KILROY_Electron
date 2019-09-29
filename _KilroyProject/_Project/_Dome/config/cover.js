@@ -77,13 +77,12 @@ class CoverWindow {
             acceptFirstMouse: false, //可单击页面打开
             disableAutoHideCursor: false, //输入时隐藏鼠标
             autoHideMenuBar: false //Alt 打开菜单
-            
         });
         
         _this.window.webContents.openDevTools();
         
         // _this.window.loadURL('');
-        _this.window.loadFile('_KilroyProject/_Dome/src/views/cover.html');
+        _this.window.loadFile('_KilroyProject/_Project/_Dome/src/views/cover.html');
         
         _this.window.once('ready-to-show', () => {
             _this.window.show();
