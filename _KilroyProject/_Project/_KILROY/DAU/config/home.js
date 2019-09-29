@@ -43,7 +43,8 @@ class HomeWindow {
         
         _this.window = new _this.electron.BrowserWindow({
             title: 'KILROY_LYK',
-            icon: '_KilroyProject/_Dome/src/img/favicon.ico',
+            icon: '_KilroyProject/_Index/src/img/favicon.ico',
+            path: '_KilroyProject/_Project/_KILROY/DAU',
             kiosk: false, //kiosk模式
             show: false, //初始化时显示
             frame: true, //无边框
