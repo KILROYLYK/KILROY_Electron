@@ -68,7 +68,7 @@ class HomeWindow {
             maximizable: true, //可最大化
             closable: true, //可关闭
             focusable: false, //可聚焦
-            alwaysOnTop: true, //窗口置顶
+            alwaysOnTop: false, //窗口置顶
             fullscreen: false, //全屏
             fullscreenable: true, //可全屏
             simpleFullscreen: true, //MacOS pre-Lion全屏
