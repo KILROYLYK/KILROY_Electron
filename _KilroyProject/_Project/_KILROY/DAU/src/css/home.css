@@ -1,0 +1,214 @@
+html,
+body {
+  position: relative;
+  height: 100%;
+  color: #000000;
+  font-size: 12px;
+  font-family: 'Microsoft YaHei', 'Hiragino Sans GB', '微软雅黑', '宋体', '华文楷体', '楷体', Arial, Verdana, sans-serif;
+}
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+a:link,
+a:active,
+a:visited,
+a:hover,
+a:visited:hover {
+  color: #ffffff;
+}
+audio {
+  opacity: 0;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: auto;
+  bottom: auto;
+  z-index: -99;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+}
+footer {
+  min-width: 300px;
+}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #000000;
+}
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: #000000;
+}
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #000000;
+}
+.show {
+  display: block;
+}
+.hide {
+  display: none;
+}
+.disabled {
+  -webkit-filter: grayscale(100);
+  -moz-filter: grayscale(100);
+  -o-filter: grayscale(100);
+  -ms-filter: grayscale(100);
+  filter: grayscale(100);
+  pointer-events: none;
+}
+.hover:hover {
+  -webkit-filter: brightness(130%);
+  -moz-filter: brightness(130%);
+  -o-filter: brightness(130%);
+  -ms-filter: brightness(130%);
+  filter: brightness(130%);
+}
+.box_scale {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: 0;
+  bottom: 0;
+  width: 200%;
+  height: 200%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transform: translate(-50%, -50%) scale(0.5);
+  -moz-transform: translate(-50%, -50%) scale(0.5);
+  -o-transform: translate(-50%, -50%) scale(0.5);
+  -ms-transform: translate(-50%, -50%) scale(0.5);
+  transform: translate(-50%, -50%) scale(0.5);
+}
+.box_vertical {
+  display: table;
+  position: relative;
+  height: 100%;
+}
+.box_vertical .box_middle {
+  display: table-cell;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  vertical-align: middle;
+}
+.box_scroll {
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.body {
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+  height: 100%;
+  margin: 0 auto;
+}
+.body > .container-fluid {
+  position: relative;
+  z-index: 0;
+  height: 100%;
+}
+h5 {
+  position: relative;
+  margin: 0;
+  text-align: left;
+  line-height: 50px;
+  color: #000000;
+  font-size: 26px;
+  font-weight: 600;
+  cursor: default;
+}
+table {
+  table-layout: fixed;
+  margin: 0 !important;
+}
+table tr td {
+  position: relative;
+  height: 31px;
+  padding: 5px !important;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 20px;
+  cursor: default;
+  border: 1px solid #dee2e6;
+  border-top: none;
+  border-left: none;
+}
+table tr td:first-child {
+  border-left: 1px solid #dee2e6;
+}
+table tr td:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+table tr td.write {
+  cursor: pointer;
+}
+table tr td input {
+  height: 20px;
+  padding: 0 !important;
+  text-align: center;
+  line-height: 20px;
+}
+#table_header tr td {
+  border-bottom: none;
+}
+#load {
+  float: left;
+  width: 220px;
+}
+#save,
+#new {
+  display: none !important;
+  padding: 5px 15px !important;
+  text-align: center !important;
+  line-height: 22px !important;
+  color: #ffffff !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  text-indent: 2px;
+  letter-spacing: 2px;
+}
+#save span,
+#new span {
+  top: auto;
+  font-size: 12px;
+  margin-right: 5px;
+  line-height: inherit;
+}
+#save.active,
+#new.active {
+  display: block !important;
+}
+#save {
+  float: right;
+}
+#new {
+  float: left;
+  margin-top: 10px;
+}
+.box_button {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.box_table {
+  display: none;
+  position: relative;
+  overflow: auto;
+  height: calc(100% - 110 * 1px);
+  padding: 10px 0 50px;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+.box_table.active {
+  display: block;
+}
+/*# sourceMappingURL=home.css.map */

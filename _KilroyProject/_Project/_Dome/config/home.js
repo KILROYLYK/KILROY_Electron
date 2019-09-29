@@ -48,7 +48,7 @@ class HomeWindow {
             height: 800
         });
         
-        _this.window.loadFile('_KilroyProject/_Project/_Dome/src/views/home.html');
+        _this.window.loadFile('_KilroyProject/_Project/_Dome/view/home.html');
         
         _this.window.webContents.openDevTools();
         

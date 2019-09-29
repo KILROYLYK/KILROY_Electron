@@ -82,7 +82,7 @@ class CoverWindow {
         _this.window.webContents.openDevTools();
         
         // _this.window.loadURL('');
-        _this.window.loadFile('_KilroyProject/_Project/_Dome/src/views/cover.html');
+        _this.window.loadFile('_KilroyProject/_Project/_Dome/view/cover.html');
         
         _this.window.once('ready-to-show', () => {
             _this.window.show();

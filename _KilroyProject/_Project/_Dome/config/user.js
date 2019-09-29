@@ -48,7 +48,7 @@ class UserWindow {
             height: 800
         });
         
-        _this.window.loadFile('_KilroyProject/_Project/_Dome/src/views/cover.html');
+        _this.window.loadFile('_KilroyProject/_Project/_Dome/view/cover.html');
         
         _this.window.webContents.openDevTools();
         

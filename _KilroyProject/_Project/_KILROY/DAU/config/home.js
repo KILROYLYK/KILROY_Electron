@@ -6,14 +6,14 @@
 class HomeWindow {
     
     /**
-     * CoverWindow原型对象
+     * HomeWindow原型对象
      * @param {object} electron Electron对象
      * @constructor
      */
     constructor(electron) {
         const _this = this;
         
-        _this.name = '首页';
+        _this.name = '超首';
         _this.electron = electron;
         _this.window = null;
     }
@@ -24,7 +24,7 @@ class HomeWindow {
      */
     init() {
         const _this = this;
-    
+        
         _this.electron.app.on('ready', () => {
             _this.ready();
         });
@@ -45,24 +45,24 @@ class HomeWindow {
         
         _this.window = new _this.electron.BrowserWindow({
             title: 'KILROY_LYK',
-            icon: '_KilroyProject/_Index/src/img/favicon.ico',
+            icon: '_KilroyProject/_Dome/src/img/favicon.ico',
             kiosk: false, //kiosk模式
             show: false, //初始化时显示
             frame: true, //无边框
             parent: null, //父窗口
             modal: false, //模态窗
-            backgroundColor: '#FFFFFF',
+            backgroundColor: '#2e2c29',
             x: 0, //X位置
             y: 0, //Y位置
             center: true, //居中
-            useContentSize: false, //除去边框
+            useContentSize: true, //除去边框
             width: 1500,
             minWidth: 1200,
             maxWidth: 1920,
             height: 1000,
             minHeight: 800,
             maxHeight: 1080,
-            resizable: false, //可改变尺寸
+            resizable: true, //可改变尺寸
             enableLargerThanScreen: false, //尺寸大于屏幕
             movable: true, //可拖动
             minimizable: true, //可最小化
@@ -72,16 +72,21 @@ class HomeWindow {
             alwaysOnTop: true, //窗口置顶
             fullscreen: false, //全屏
             fullscreenable: true, //可全屏
-            simpleFullscreen: false, //MacOS pre-Lion全屏
+            simpleFullscreen: true, //MacOS pre-Lion全屏
             skipTaskbar: true, //任务栏显示窗口
             acceptFirstMouse: false, //可单击页面打开
             disableAutoHideCursor: false, //输入时隐藏鼠标
             autoHideMenuBar: false //Alt 打开菜单
         });
         
-        _this.window.loadFile('_KilroyProject/_Dome/src/views/home.html');
+        // _this.window.webContents.openDevTools();
         
-        _this.window.webContents.openDevTools();
+        // _this.window.loadURL('');
+        _this.window.loadFile('_KilroyProject/_Project/_KILROY/DAU/view/home.html');
+        
+        _this.window.once('ready-to-show', () => {
+            _this.window.show();
+        });
         
         _this.window.on('closed', () => {
             //清除浏览器对象
