@@ -11,11 +11,13 @@
 *.mp3
 *.mp4
 main.js
+main.ts
 
 #Folders
 /_DIST
 /_KilroyLYK
 /_KilroyProject/_Index
+/_KilroyProject/_Project/$Cache
 /_KilroyProject/_Project/$PublicSrc
 /_KilroyProject/_Project/_Base
 /_KilroyProject/_Project/_SDK
