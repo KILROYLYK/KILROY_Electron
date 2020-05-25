@@ -40,8 +40,8 @@ module.exports = class Index {
         const _this = this;
     
         _this.instance = new Electron.BrowserWindow({
-            title: 'KILROY_Index',
-            icon: true, // ICON
+            title: 'KILROY_Electron',
+            icon: '_KilroyProject/_Project/_Base/image/favicon.png', // ICON
             kiosk: false, // Kiosk模式
             show: false, // 初始化时显示
             frame: true, // 无边框
