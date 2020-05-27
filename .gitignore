@@ -24,7 +24,7 @@ main.tsx
 /_KilroyProject/_Project/_Base
 /_KilroyProject/_Project/_SDK
 /$Dist
-example/*
+example/
 
 # Media
 *.mp3
