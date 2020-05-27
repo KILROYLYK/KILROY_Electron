@@ -76,7 +76,7 @@ module.exports = class Index {
         });
         
         // _this.instance.webContents.openDevTools();
-        _this.instance.loadFile('');
+        _this.instance.loadFile('_KilroyProject/_Project/_Dome/application/example/index.html');
         _this.instance.once('ready-to-show', () => {
             _this.instance.show();
         });
