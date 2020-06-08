@@ -41,7 +41,7 @@ module.exports = class Index {
     
         _this.instance = new Electron.BrowserWindow({
             title: 'KILROY_Electron',
-            icon: 'http://localhost:723/image/favicon.png', // ICON
+            icon: true, // ICON
             kiosk: false, // Kiosk模式
             show: false, // 初始化时显示
             frame: true, // 无边框
