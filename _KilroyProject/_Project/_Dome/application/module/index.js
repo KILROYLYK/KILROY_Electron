@@ -38,7 +38,7 @@ module.exports = class Index {
      */
     onReady() {
         const _this = this;
-    
+        
         _this.instance = new Electron.BrowserWindow({
             title: 'KILROY_Electron',
             icon: true, // ICON
@@ -103,4 +103,4 @@ module.exports = class Index {
         const _this = this;
         process.platform !== 'darwin' && Electron.app.quit();
     }
-}
+};
